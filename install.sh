@@ -4,11 +4,8 @@ echo "deb [ arch=amd64,arm64,armhf signed-by=/usr/share/keyrings/mongodb-server-
 apt update
 apt-get install -y mongodb-org=4.4.18 mongodb-org-server=4.4.18 mongodb-org-mongos=4.4.18 mongodb-org-tools=4.4.18 mongodb-org-shell=4.4.18 mongodb-org-database-tools-extra=4.4.18
 
-
-
 curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
 apt-get install nodejs -y
-
 
 wget https://github.com/nightscout/cgm-remote-monitor/archive/refs/tags/15.0.3.tar.gz 
 tar xzvf 15.0.3.tar.gz
