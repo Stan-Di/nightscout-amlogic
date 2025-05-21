@@ -51,7 +51,7 @@ WantedBy=multi-user.target
 ```
 
 ```
-systemctl start ns
-systemctl enable ns
+systemctl start ns1
+systemctl enable ns1
 ```
 On Tv Box with 2gb RAM work fine 11 Nightscout
