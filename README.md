@@ -7,7 +7,7 @@ After starting the Ubuntu system with a configured Internet connection run conso
 ```
 apt update -y && curl -Lso- https://raw.githubusercontent.com/Stan-Di/nightscout-amlogic/refs/heads/main/install.sh | sh
 ```
-Script will install MongoDB 4.4.18 from old Focal MongoDB repository, NodeJS 18 (working with Тшррысщге 15.0.3) from repository and Nightscout 15.0.3 
+Script will install MongoDB 4.4.18 from old Focal MongoDB repository, NodeJS 18 (working with Nightscout 15.0.3) from repository and Nightscout 15.0.3 from https://github.com/nightscout/cgm-remote-monitor/releases/tag/15.0.3
 
 ### Add Nightscout service to Systemctl
 
