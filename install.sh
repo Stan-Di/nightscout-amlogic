@@ -11,7 +11,7 @@ wget https://github.com/nightscout/cgm-remote-monitor/archive/refs/tags/15.0.3.t
 tar xzvf 15.0.3.tar.gz
 mv cgm-remote-monitor-15.0.3 cgm
 cd cgm
-npm install
-
 wget https://github.com/Stan-Di/nightscout-amlogic/raw/refs/heads/main/cgm.gz
 tar xzvf cgm.gz
+
+npm install
