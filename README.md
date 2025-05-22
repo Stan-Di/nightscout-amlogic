@@ -68,3 +68,20 @@ Save variables (Ctrl-X and type y) and restart Nightscout server
 ```
 pkill node
 ```
+### Bonus: Access to your Nightscout using Cloudflared
+
+To test access your Nightscout install and run cloudflared - https://github.com/cloudflare/cloudflared
+```
+wget https://github.com/cloudflare/cloudflared/releases/download/2025.5.0/cloudflared-linux-arm64.deb
+dpkg -i cloudflared-linux-arm64.deb
+cloudflared tunnel --url localhost:1337
+```
+You can see as example
+```
+2025-05-22T07:46:43Z INF Requesting new quick Tunnel on trycloudflare.com...
+2025-05-22T07:46:49Z INF +--------------------------------------------------------------------------------------------+
+2025-05-22T07:46:49Z INF |  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |
+2025-05-22T07:46:49Z INF |  https://warranty-y-schema-perfume.trycloudflare.com                                       |
+2025-05-22T07:46:49Z INF +--------------------------------------------------------------------------------------------+
+```
+There https://warranty-y-schema-perfume.trycloudflare.com is your tempotary address.
