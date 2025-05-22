@@ -55,3 +55,16 @@ systemctl start ns1
 systemctl enable ns1
 ```
 On Tv Box with 2gb RAM work fine 11 Nightscout
+
+### Editing Nightscout settings
+
+Instructions for setting up variables are on the official website - https://github.com/nightscout/cgm-remote-monitor?tab=readme-ov-file#environment
+
+For edit, cd to home directory (/root/) and run
+```
+nano cgm/env/1337.env
+```
+Save variables (Ctrl-X and type y) and restart Nightscout server
+```
+pkill node
+```
