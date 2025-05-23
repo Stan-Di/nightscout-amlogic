@@ -88,3 +88,5 @@ You can see as example
 2025-05-22T07:46:49Z INF +--------------------------------------------------------------------------------------------+
 ```
 There https://warranty-y-schema-perfume.trycloudflare.com is your tempotary address.
+
+In advanced mode you can add your domain name to Cloudflare Zero Trust and create Tunnel with TV box - https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/create-remote-tunnel/
