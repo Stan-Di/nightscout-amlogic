@@ -68,6 +68,9 @@ Save variables (Ctrl-X and type y) and restart Nightscout server
 ```
 pkill node
 ```
+For other Nightscout instances, create and edit files 13370.env, 13371.env, etc... in the directory cgm/env. Here 13370, 13371 - is the port number new instance of Nightscout. I use numbers 1337*, 2337*, 3337* 
+for convenience.
+
 ### Bonus: Access to your Nightscout using Cloudflared
 
 To test access your Nightscout install and run cloudflared - https://github.com/cloudflare/cloudflared
