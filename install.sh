@@ -3,6 +3,9 @@
 apt-get install -y gnupg curl wget
 curl -fsSL https://www.mongodb.org/static/pgp/server-4.4.asc | gpg -o /usr/share/keyrings/mongodb-server-4.4.gpg --dearmor
 echo "deb [ arch=amd64,arm64,armhf signed-by=/usr/share/keyrings/mongodb-server-4.4.gpg ] https://repo.mongodb.org/apt/ubuntu focal/mongodb-org/4.4 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-4.4.list
+wget http://ports.ubuntu.com/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_arm64.deb
+dpkg -i libssl1.1_1.1.1f-1ubuntu2_arm64.deb
+
 apt update
 apt-get install -y mongodb-org=4.4.18 mongodb-org-server=4.4.18 mongodb-org-mongos=4.4.18 mongodb-org-tools=4.4.18 mongodb-org-shell=4.4.18 mongodb-org-database-tools-extra=4.4.18
 
