@@ -20,3 +20,6 @@ wget https://github.com/Stan-Di/nightscout-amlogic/raw/refs/heads/main/cgm.gz
 tar xzvf cgm.gz
 
 npm install
+
+systemctl start mongod
+systemctl enable mongod
